@@ -1,3 +1,7 @@
+/*
+nbvector v1.0
+*/
+
 /// @func	Vector2(x, y);
 ///	@param	{real}	x	The x-coordinate.
 ///	@param	{real}	y	The y-coordinate.
