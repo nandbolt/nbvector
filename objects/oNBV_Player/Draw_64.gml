@@ -23,4 +23,6 @@ draw_text(_x, _y, "orientation");
 _y += _ySpacing;
 draw_text(_x, _y, string("facing direction: {0}", facingDir));
 _y += _ySpacing;
-draw_text(_x, _y, string("facing angle: {0}", facingDir.angle()));
+draw_text(_x, _y, string("facing angle: {0}", facingDirAngle));
+_y += _ySpacing;
+draw_text(_x, _y, string("{0} :facing matrix", facingDirMatrix));

@@ -3,6 +3,7 @@
   "resourceVersion": "1.6",
   "name": "nbvector",
   "resources": [
+    {"id":{"name":"scrMat22Struct","path":"scripts/scrMat22Struct/scrMat22Struct.yy",},"order":1,},
     {"id":{"name":"scrVector2Struct","path":"scripts/scrVector2Struct/scrVector2Struct.yy",},"order":0,},
     {"id":{"name":"oNBV_Player","path":"objects/oNBV_Player/oNBV_Player.yy",},"order":0,},
     {"id":{"name":"rNBV_Demo","path":"rooms/rNBV_Demo/rNBV_Demo.yy",},"order":0,},

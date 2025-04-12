@@ -30,3 +30,5 @@ y += velocity.y * _dt;
 facingDir.x = mouse_x - x;
 facingDir.y = mouse_y - y;
 facingDir.normalize();
+facingDirAngle = facingDir.angle();
+facingDirMatrix.setRotation(facingDirAngle);

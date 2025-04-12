@@ -1,6 +1,7 @@
 /// @func	Vector2(x, y);
 ///	@param	{real}	x	The x-coordinate.
 ///	@param	{real}	y	The y-coordinate.
+///	@desc	A 2D vector.
 function Vector2(_x=0, _y=0) constructor
 {
 	x = _x;
@@ -50,6 +51,21 @@ function Vector2(_x=0, _y=0) constructor
 	{
 		x = _v.x * _factor;
 		y = _v.y * _factor;
+	}
+	
+	///	@func	setAngle(angle);
+	///	@param	{real}	angle	The angle to set it to.
+	///	@desc	Sets the vector towards the given angle, keeping the same length or
+	///			setting it to a unit vector if initially zero.
+	static setAngle = function(_angle)
+	{
+		// Get length
+		var _len = magnitude();
+		if (_len == 0) _len = 1;
+		
+		// Set components
+		x = lengthdir_x(_len, _angle);
+		y = lengthdir_y(_len, _angle);
 	}
 	
 	///	@func	getCopy();

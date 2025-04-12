@@ -12,4 +12,7 @@ acceleration = new Vector2();
 force = new Vector2();
 
 // Orientation
+facingDirAngle = 0;
 facingDir = new Vector2();
+facingDir.setAngle(facingDirAngle);
+facingDirMatrix = new Matrix22(facingDirAngle);
